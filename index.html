@@ -1,10 +1,20 @@
+---
+
+---
+
 <html>
 	<title>
 		GitHubTeacher.GitHub.io
 	</title>
 
-	<body>
-		<h1>GitHubTeacher.GitHub.io</h1>
+	<link rel="stylesheet" href="default.css">
 
+	<script type="text/javascript" src="home.js"></script>
+
+	<body>
+		{% capture nav %}{% include navigation %}{% endcapture %}
+		{{ nav | markdownify }}
+
+		<h1>GitHubTeacher.GitHub.io</h1>
 	</body>
 </html>
